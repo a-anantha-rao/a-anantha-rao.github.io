@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arava Ananatha Rao Portfolio</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+<a class="navbar-brand" href="index.html">
+  <span style="color: #FFB833;">A.</span> Anantha Rao
+</a>
+
+
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+		  
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
+			  <li class="nav-item"><a href="#linkedin-section" class="nav-link"><span>LinkedIn</span></a></li>
+ <li class="nav-item"><a href="#cert-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);background-size: 75% auto;background-position:center top">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Arava Anantha Rao</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Information Security Professional',
+						'ISO/IEC 27001:2022 Lead Auditor,
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 250);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						
+			            <h2>Information Security Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 2 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/asp0405/" class="btn btn-primary py-3 px-4">LinkedIn | 5K+</a> 
+							<!-- <a href="https://github.com/ASP0405" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex align-items-stretch">
+				<div class="col-md-12">
+					<div class="row d-flex">
+						<!-- About Me Text Only -->
+						<div class="col-md-12 pl-lg-5 pb-5">
+							<div class="row justify-content-start pb-3">
+								<div class="col-md-12 heading-section ftco-animate">
+									<h1 class="big">About</h1>
+									<h2 class="mb-4">About Me</h2>
+									<p>Results-driven Information Security Manager with 2 years of dedicated experience in Governance, Risk, and Compliance (GRC) within complex IT environments. Expertise in ISO/IEC 27001:2022 and ITGC compliance, focusing on risk assessments and incident analysis to enhance organisational security postures. Proficient in managing cross-functional teams, conducting thorough technology evaluations, and ensuring audit readiness. Committed to implementing robust controls that protect sensitive information while fostering a culture of security awareness across all levels of the organisation.</p>
+									<ul class="about-info mt-4 px-md-0 px-2">
+										<li class="d-flex"><span>Job Role:</span> <span>Information Security Manager</span></li>
+										<li class="d-flex"><span>Domain:</span> <span>Governance, Risk & Compliance (GRC), Corporate Security</span></li>
+										<li class="d-flex"><span>Education:</span> <span>Master of Computer Applications </span></li>
+										<li class="d-flex"><span>Language:</span> <span>English, Hindi, Telugu</span></li>
+										<li class="d-flex"><span>Tools:</span> <span>Collaboration Tools (Microsoft Office 365, Excel Dashboards, PowerPoint Reporting) & Repository Management (MS SharePoint)</span></li>
+										<li class="d-flex"><span>Skills:</span> <span>Risk Management (Assessment & Treatment), Compliance Management, ISO/IEC 27001:2022 Implementation, Security Incident Analysis, Internal & External Audit Readiness & Compliance Support, Baseline Control Reviews, Handling and Closing NCRs, Regulatory Standards (GDPR, HIPAA, DPDP, SOX, PCI DSS), IT Controls & Framework (ITGC, SOC 1, SOC 2, NIST), Gap Analysis & Mitigation, Data Protection & Privacy, Security Policy Development, Change Management, Vulnerability Assessment (VA) & Exception, User Access Mangement, Reporting & Documentation, Security Awareness Training, Hardening Review, Network & Cloud Security, Emerging Technology Risk Assessments (GenAI), Leadership, Analytical Skills, Collaboration & Stakeholder Management. </span></li> 
+										<li class="d-flex"><span>Interest:</span> <span> Badminton, Movies, Cooking, Traveling, and Exploring Technology</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="counter-wrap ftco-animate d-flex mt-md-3">
+								<div class="text">
+									<p class="mb-4">
+		<span class="number" data-number="10">0</span> <span>+</span>
+										<span>&nbsp;Units- Risk Registers Managed </span> <br>								<span class="number" data-number="4000">0</span> <span>+</span>
+									<span>&nbsp;Change Management Requests Handled</span><br>
+
+<span class="number" data-number="10000">0</span> <span>+</span>
+										<span>&nbsp;Associates – Security Awareness Sessions Delivered </span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+	
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Information Security Professional with 2 year of experience in GRC, specializing in risk management, audits, and regulatory compliance (ISO 27001, GDPR, ITGC & NIST). Skilled in vulnerability assessments, audit readiness, and safeguarding sensitive information across cross-functional teams.</p>
+			<!-- <p><a href="https://www.linkedin.com/in/asp0405/" class="btn btn-primary py-3 px-4">Download</a>    -->
+			</div>
+        </div>
+
+		
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<!-- <div class="col-md-6"> -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Sep'2023-Present</span>
+						<h2>Information Security Manager</h2>
+						<span class="position">Tata Consultancy Services</span>
+						<p class="mt-4">As an Information Security Manager, I managed Governance, Risk, and Compliance for the Corporate Shared Services Group, specializing in ISO/IEC 27001:2022, ITGC, and Data Protection. I led initiatives to Streamline Processes, Automate Offline Workflows, and Align Operations with Updated Security Policies. 
+							<ul>
+								<li>Led and participated in risk identification, baseline control checks, and audit readiness across multiple business functions, ensuring compliance with internal and external requirements.</li>
+								<li>Managed risk registers for 10+ units, conducted detailed IT risk assessments, and ensured timely
+ NCR closures.</li>
+								<li>Reviewed and assessed over 4,000 change requests, improving adherence to security policies, and
+ reducing potential breach risks.</li>
+								<li>Supported audit readiness and control validations for new infrastructure setups through HOTO
+ activities and physical security walkthroughs.</li>
+								<li>Conducted hardening checklist reviews for Windows and server environments, enhancing
+ configuration compliance across corporate systems.</li>
+								<li> Worked independently and collaboratively to share important information about processes and
+ guidelines, implementing process improvements while consistently meeting tight deadlines.</li>
+								<li>Spearheaded the annual InfoSecurity Fest, engaging over 5,000 participants, and delivered Security
+ Awareness Sessions to more than 10,000 associates.</li>
+								<li>Collaborated with leadership to organize and present insights at Branch Security Committee (BSC)
+ meetings, sharing incident trends, risk dashboards, and compliance posture.</li>
+								<li>Performed incident analysis, implemented process improvements, and aligned policies across
+ multiple units.</li>
+							
+								<li>Identified and assessed key controls across multiple units, updated processes, conducted
+ effectiveness testing, and recommended remediation strategies to ensure compliance with internal
+ policies.</li>
+	<li> (Potentially) found and addressed gaps in compliance processes, suggesting updates to enhance
+ efficiency.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+
+<div class="row">
+    <h1 class="big-4">Education</h1>
+    <div class="underline"></div>
+</div>
+<br>
+<div class="container">
+    <div class="row d-flex">
+        <div class="col-md-5 d-flex">
+            <div class="resume-wrap ftco-animate flex-fill">
+                <span class="date">2021-2023</span>
+                <h2>Master of Computer Applications (MCA)</h2>
+                <span class="position"> Gayatri Vidya Parishad College of Engineering, Visakhapatnam</span>
+                <p class="mt-4">CGPA: 8.84 - First class with distinction</p>
+            </div>
+        </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-5 d-flex">
+            <div class="resume-wrap ftco-animate flex-fill">
+                <span class="date">2018-2021</span>
+                <h2>Bachelor of Science (B.Sc)</h2>
+                <span class="position">Maharajah's College, Vizianagaram</span>
+                <p class="mt-4">CGPA: 9.02 - First class with distinction</p>
+            </div>
+        </div>
+        <div class="col-md-2"></div> 
+    </div>
+</div>
+<br><br><br>
+
+
+
+			<div class="text-center">
+				<p class="mb-4">
+					<a href="https://drive.google.com/file/d/1ADgBE37PJ0y-aPkJQaKSau9GxDzrG_cF/view?usp=sharing" class="btn btn-primary py-3 px-4">Download Resume</a>
+				</p>
+			</div>
+			
+
+
+		
+			<section class="ftco-section" id="skills-section">
+				<div class="container">
+					<div class="row justify-content-center pb-5">
+			  <div class="col-md-12 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Skills</h1>
+				<h2 class="mb-4">My Core Skills</h2>
+				<p>Ensuring Compliance and Security in Every Layer</p>
+			  </div>
+			</div>
+					<div class="row">
+						<div class="col-md-6 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Information Security</h3>
+								<div class="progress">
+									<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="100" style="width:95%">
+									<span>95%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Compliance Management</h3>
+								<div class="progress">
+									<div class="progress-bar color-2" role="progressbar" aria-valuenow="95"
+									aria-valuemin="0" aria-valuemax="100" style="width:95%">
+									<span>95%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Tech Risk Assessments</h3>
+								<div class="progress">
+									<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+									aria-valuemin="0" aria-valuemax="100" style="width:85%">
+									<span>85%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Risk Management</h3>
+								<div class="progress">
+									<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="100" style="width:85%">
+									<span>85%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Regulatory Standards & IT Controls</h3>
+								<div class="progress">
+									<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="100" style="width:80%">
+									<span>80%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box">
+							<div class="progress-wrap ftco-animate">
+								<h3>Network Security & AI Governance</h3>
+								<div class="progress">
+									<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="100" style="width:80%">
+									<span>80%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+
+
+
+    <!-- <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
+                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br> -->
+		<!-- added justify-content-center to center align the last two projects -->
+		<!-- <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section> -->
+
+	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  	<!-- <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to transform complex security challenges into actionable compliance strategies </h4>
+						<br>
+						<p><a href="https://github.com/ASP0405" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg); margin-top: 50px;"> -->
+		<!-- <div class="container"> -->
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> GitHub</span></h2>
+					<div class="heading">
+						<h4>I love to transform complex security challenges into actionable compliance strategies</h4>
+						<br>
+						<p><a href="https://github.com/ASP0405" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	
+	
+
+
+
+
+
+
+
+
+
+	<section class="ftco-section" id="linkedin-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">LinkedIn</h1>
+			  <h2 class="mb-4">LinkedIn</h2>
+			  <p>Showcasing Expertise Through Tangible Results and Achievements</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="single.html" class="block-20" style="background-image: url('images/special.jfif');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <div class="d-flex align-items-center mb-3 meta">
+					  <p class="mb-0">
+	
+					  </p>
+				  </div>
+				  <h3 class="heading"><a href="https://www.linkedin.com/posts/aanantharao_thankyoutcs-gratitude-specialinitiativeaward-activity-7344748800730611715-O9lS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADr4JgoB-kwl3fHJIZzl3rGRNhMdw-oovZ0">A heartfelt thank you to TCS for recognizing my efforts — this award inspires me to keep learning, growing, and making a meaningful impact.🌟</a></h3>
+				  <p>I’m truly humbled to receive the Special Initiative Award in appreciation of my contributions to the organization.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="single.html" class="block-20" style="background-image: url('images/5k.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <div class="d-flex align-items-center mb-3 meta">
+					  <p class="mb-0">
+
+					  </p>
+				  </div>
+				  <h3 class="heading"><a href="https://www.linkedin.com/posts/aanantharao_5000connections-gratefulheart-linkedinfamily-activity-7351454711096528898-MdMJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADr4JgoB-kwl3fHJIZzl3rGRNhMdw-oovZ0">5,000+ Followers Milestone Achieved: A Huge Thank You to My LinkedIn Community!🚀</a></h3>
+				  <p>Celebrating this incredible journey for your support and shared success!</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="single.html" class="block-20" style="background-image: url('images/ss.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <div class="d-flex align-items-center mb-3 meta">
+					  <p class="mb-0">
+
+				
+					  </p>
+				  </div>
+				  <h3 class="heading"><a href="https://topmate.io/arava_anantha_rao"> Anantha Rao - Book a call on Topmate,
+Let's Connect ☺️</a></h3>
+				  <p>Topmate changed how I plan, act, and succeed—game over for inefficiency. 'I have been using topmate for quite sometime and it's been a game-changer.'</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+  
+
+
+
+
+
+<section class="ftco-section" id="cert-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Certifications</h1>
+        <h2 class="mb-4">Certifications</h2>
+        <p>Showcasing Expertise Through Certifications</p>
+      </div>
+    </div>
+
+    <!-- FIRST ROW -->
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="single.html" class="block-20" style="background-image: url('images/LAI.jfif');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0"><span class="mr-2">June 27, 2025</span></p>
+            </div>
+            <h3 class="heading">
+              <a href="https://www.linkedin.com/posts/aanantharao_iso27001-leadauditor-informationsecurity-activity-7344811265829060608-dlJ-?utm_source=share&utm_medium=member_desktop&rcm=ACoAADr4JgoB-kwl3fHJIZzl3rGRNhMdw-oovZ0">
+                ISO/IEC 27001:2022 Lead Auditor Certification from TÜV SÜD ! 🏅
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="single.html" class="block-20" style="background-image: url('images/comp.jfif');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0"><span class="mr-2">June 2, 2025</span></p>
+            </div>
+            <h3 class="heading">
+              <a href="https://www.linkedin.com/posts/aanantharao_comptia-securityplus-cybersecurity-activity-7335261048683331584-4OQO?utm_source=share&utm_medium=member_desktop&rcm=ACoAADr4JgoB-kwl3fHJIZzl3rGRNhMdw-oovZ0">
+                CompTIA Security+ (SY0-701)🚀
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry">
+          <a href="single.html" class="block-20" style="background-image: url('images/AZ.png');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0"><span class="mr-2">May 12, 2025</span></p>
+            </div>
+            <h3 class="heading">
+              <a href="https://www.linkedin.com/posts/aanantharao_im-happy-to-share-that-ive-obtained-a-new-activity-7327713317261574144-9Y04?utm_source=share&utm_medium=member_desktop&rcm=ACoAADr4JgoB-kwl3fHJIZzl3rGRNhMdw-oovZ0">
+                Microsoft Certified: Azure Security Engineer Associate (AZ-500)🎉
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECOND ROW (DUPLICATE, EDIT AS NEEDED) -->
+    <div class="row d-flex mt-5">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="single.html" class="block-20" style="background-image: url('images/A900.jfif');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0"><span class="mr-2">FEB 17, 2024</span></p>
+            </div>
+            <h3 class="heading">
+              <a href="https://www.linkedin.com/posts/aanantharao_azurecloud-microsoftazure-microsoftai-activity-7164658734361767936-E0zj?utm_source=social_share_video_v2&utm_medium=android_app&rcm=ACoAADr4JgoB-kwl3fHJIZzl3rGRNhMdw-oovZ0&utm_campaign=copy_link">Microsoft Certified: Azure AI Fundamentals (AI 900)✍️</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="single.html" class="block-20" style="background-image: url('images/S900.jfif');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0"><span class="mr-2">AUG 14, 2024</span></p>
+            </div>
+            <h3 class="heading">
+              <a href="https://www.linkedin.com/posts/aanantharao_sc900-microsoft-certification-activity-7229493095124361216-Bz07/?utm_source=social_share_video_v2&utm_medium=android_app&rcm=ACoAADr4JgoB-kwl3fHJIZzl3rGRNhMdw-oovZ0&utm_campaign=copy_link">Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC 900) 🥇</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry">
+          <a href="single.html" class="block-20" style="background-image: url('images/Z900.png');"></a>
+          <div class="text mt-3 float-right d-block">
+            <div class="d-flex align-items-center mb-3 meta">
+              <p class="mb-0"><span class="mr-2">APRIL 11, 2024</span></p>
+            </div>
+            <h3 class="heading">
+              <a href="https://learn.microsoft.com/en-us/users/aravarao-2648/credentials/bfad75d6b8e3a0e5?ref=https%3A%2F%2Fwww.linkedin.com%2F">Microsoft Certified: Azure Fundamentals (AZ 900)✅</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          	 <p>
+  <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TewTDYrN2D04syoTEktSkxKTAEAQSYGfw&q=hyderabad&rlz=1C1GCEA_enIN1161IN1161&oq=hyd&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDIKCAIQABixAxiABDIHCAMQABiABDIHCAQQABiABDIKCAUQABixAxiABDIHCAYQABiABDIGCAcQRRg80gEIMTk5N2owajeoAgiwAgHxBRTCu9nQOlCh&sourceid=chrome&ie=UTF-8#cobssid=s" 
+     target="_blank" 
+     style="display:inline-block; padding:5px 10px; background-color:#FFBA35; color:black; text-decoration:none; border-radius:6px; font-weight:bold;">
+    Hyderabad
+  </a>
+</p>
+
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-users"></span>
+          		</div>
+          		
+	      	            <p>
+  <a href="https://www.instagram.com/thecorporatechai?igsh=ZDY0bnd1eWdmNHh2" 
+     target="_blank" 
+     style="display:inline-block; padding:5px 10px; background-color:#FFBA35; color:black; text-decoration:none; border-radius:6px; font-weight:bold;">
+    Join Community
+  </a>
+</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-envelope"></span>
+          		</div>
+          		
+	            <p>
+  <a href="mailto:aravaanantha@gmail.com" 
+     target="_blank" 
+     style="display:inline-block; padding:5px 10px; background-color:#FFBA35; color:black; text-decoration:none; border-radius:6px; font-weight:bold;">
+    Email Address
+  </a>
+</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-shop"></span>
+          		</div>
+          		
+<p>
+  <a href="https://superprofile.bio/aanantharao" 
+     target="_blank" 
+     style="display:inline-block; padding:5px 10px; background-color:#FFBA35; color:black; text-decoration:none; border-radius:6px; font-weight:bold;">
+    Visit My Store
+  </a>
+</p>
+
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://t.me/a_anantha_rao" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					 					  <li class="ftco-animate"><a href="https://linkedin.com/in/aanantharao
+"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://x.com/Its_Anantha_Rao?t=dAm2SIKK0bLIq97Ov5MySA&s=09"><span class="icon-twitter"></span></a></li>
+		
+				      <li class="ftco-animate"><a href="https://www.instagram.com/a_anantha_rao?igsh=MTA5c3loMGRpcWljeg=="><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+   <footer class="ftco-footer ftco-section" style="background:black; padding: 20px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <!-- Visitor Counter -->
+        <div style="margin-bottom: 10px; color: white; font-family: Poppins; font-size: 16px;">
+  <span style="font-size:20px;"></span>👋 You’re Visitor Number: 
+  <span id="visitor-count" style="font-weight:light; font-size:16px;">0</span>
+  <a href="https://drive.google.com/drive/folders/1SCMDPGg-HLWWtQ02BFU3GLJUZnDY2wYy?usp=sharing" target="_blank" style="color: white; margin-left: 8px; ">
+    | Visit my InfoSecurity Vault 📁
+  </a>
+</div>
+
+
+        <!-- Footer Text -->
+        <p style="color:white; margin:0;">
+         Copyright ©2025 All Rights Reserved | This template is made by Arava Anantha Rao <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFBA35" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+           2 5.42 4.42 3 7.5 3
+           c1.74 0 3.41 0.81 4.5 2.09
+           C13.09 3.81 14.76 3 16.5 3
+           19.58 3 22 5.42 22 8.5
+           c0 3.78-3.4 6.86-8.55 11.54
+           L12 21.35z"/>
+</svg>
+          
+        </p>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function animateCountUp(element, start, end, duration) {
+    let startTime = null;
+    function step(currentTime) {
+        if (!startTime) startTime = currentTime;
+        let progress = Math.min((currentTime - startTime) / duration, 1);
+        element.textContent = Math.floor(progress * (end - start) + start);
+        if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
+
+fetch('https://api.countapi.xyz/hit/ananth-portfolio/visits')
+    .then(response => response.json())
+    .then(data => {
+        let countElement = document.getElementById('visitor-count');
+        animateCountUp(countElement, 0, data.value, 1000);
+    });
+</script>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
