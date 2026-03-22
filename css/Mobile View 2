@@ -1,0 +1,26 @@
+/* Flex container to handle layout */
+.container {
+  display: flex;
+  flex-direction: column; /* Adjust based on your layout needs */
+  padding: 10px;
+}
+
+/* Flex items to adapt to container */
+.item {
+  flex: 1;
+  margin: 5px;
+  box-sizing: border-box; /* Ensures padding/margin don't cause overflow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+  }
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}

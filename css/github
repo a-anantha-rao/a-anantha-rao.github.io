@@ -1,0 +1,9 @@
+/* Example CSS to ensure links are clickable */
+a {
+    color: #fff; /* Make sure the link text color contrasts with the background */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
