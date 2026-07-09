@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NC5FMSX8S"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -61,26 +60,26 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 /* grid */
 .store{max-width:1160px;margin:0 auto;padding:40px 6vw 100px}
 .prod-grid{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
-.prod{flex:1 1 210px;max-width:238px;background:var(--bg2);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.35s;display:flex;flex-direction:column}
+.store-divider{display:flex;align-items:center;gap:18px;margin:44px 0 26px}
+.store-divider::before,.store-divider::after{content:'';flex:1;height:1px;background:var(--line)}
+.store-divider span{font-family:var(--head);font-weight:800;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);white-space:nowrap}
+.prod{flex:1 1 158px;max-width:200px;background:var(--bg2);border:1px solid var(--line);border-radius:15px;overflow:hidden;transition:.35s;display:flex;flex-direction:column}
 .prod:hover{transform:translateY(-6px);border-color:rgba(245,179,1,.4);box-shadow:0 24px 60px rgba(0,0,0,.5)}
 .p-img{position:relative;aspect-ratio:1/1;overflow:hidden;background:#131210}
-.p-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(26px) brightness(.5) saturate(1.15);transform:scale(1.25);z-index:1}
-.p-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:2}
+.p-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
 .p-ph{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px}
 .p-img.ok .p-ph{display:none}
 .p-ph .ph-ic{font-size:3rem}
 .p-ph .ph-t{font-family:var(--head);font-weight:700;color:var(--cream);font-size:1.1rem;line-height:1.25}
 .p-ph .ph-s{font-size:.66rem;color:var(--mut);letter-spacing:.04em;font-family:var(--head)}
 .p-flag{position:absolute;top:12px;left:12px;z-index:3;background:var(--coral);color:#2a0d09;font-family:var(--head);font-weight:800;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:100px}
-.p-body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
-.p-cat{font-family:var(--head);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:6px}
-.p-body h3{font-family:var(--head);font-weight:700;font-size:.94rem;letter-spacing:-.015em;color:var(--cream);line-height:1.25;margin-bottom:7px}
-.p-body .p-desc{color:var(--mut);font-size:.74rem;line-height:1.5;margin-bottom:14px;flex:1}
-.p-price{display:flex;align-items:baseline;gap:8px;margin-bottom:13px;flex-wrap:wrap}
-.p-price .old{font-family:var(--head);color:var(--mut);text-decoration:line-through;font-size:.9rem;font-weight:500}
-.p-price .new{font-family:var(--head);font-weight:800;font-size:1.55rem;line-height:1;background:var(--agrad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.p-price .save{font-family:var(--head);font-size:.55rem;font-weight:800;color:var(--coral);background:rgba(255,107,94,.1);border:1px solid rgba(255,107,94,.3);border-radius:100px;padding:3px 8px;letter-spacing:.05em}
-.p-buy{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#062617;font-family:var(--head);font-weight:800;font-size:.74rem;padding:11px 14px;border-radius:100px;text-decoration:none;transition:.3s}
+.p-body{padding:11px 11px 13px;display:flex;flex-direction:column;flex:1}
+.p-body h3{font-family:var(--head);font-weight:700;font-size:.8rem;letter-spacing:-.015em;color:var(--cream);line-height:1.2;margin-bottom:auto}
+.p-price{display:flex;align-items:baseline;gap:7px;margin:9px 0 9px;flex-wrap:wrap}
+.p-price .old{font-family:var(--head);color:var(--mut);text-decoration:line-through;font-size:.74rem;font-weight:500}
+.p-price .new{font-family:var(--head);font-weight:800;font-size:1.2rem;line-height:1;background:var(--agrad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.p-best{font-family:var(--head);font-size:.5rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);background:rgba(255,107,94,.12);border:1px solid rgba(255,107,94,.4);border-radius:100px;padding:3px 8px;white-space:nowrap;align-self:center}
+.p-buy{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--wa);color:#062617;font-family:var(--head);font-weight:800;font-size:.68rem;padding:9px 10px;border-radius:100px;text-decoration:none;transition:.3s}
 .p-buy:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(37,211,102,.35);filter:brightness(1.05)}
 .refund-note{text-align:center;margin-top:34px;color:#6f6a5f;font-size:.78rem;letter-spacing:.03em;font-family:var(--head);font-weight:500}
 .refund-note b{color:var(--coral)}
@@ -99,17 +98,18 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 @media(max-width:600px){
   #waFloat{right:14px;bottom:14px;width:52px;height:52px}
   #waFloat svg{width:29px;height:29px}
-  .prod-grid{gap:12px}
-  .prod{flex:1 1 calc(50% - 6px);max-width:none;min-width:0}
-  .p-body{padding:13px 12px 15px}
-  .p-cat{font-size:.5rem}
-  .p-body h3{font-size:.82rem;margin-bottom:5px}
-  .p-body .p-desc{font-size:.68rem;margin-bottom:11px}
-  .p-price .new{font-size:1.35rem}
-  .p-price .old{font-size:.78rem}
-  .p-price .save{font-size:.5rem;padding:2px 6px}
-  .p-buy{font-size:.6rem;padding:11px 6px;gap:4px;white-space:nowrap}
-  .s-hero{padding:60px 6vw 30px}
+  .prod-grid{gap:8px}
+  .prod{flex:0 1 calc(33.333% - 6px);max-width:none;min-width:0;border-radius:12px}
+  .p-body{padding:8px 6px 9px}
+  .p-body h3{font-size:.6rem;line-height:1.15}
+  .p-price{margin:6px 0;gap:4px}
+  .p-price .new{font-size:.92rem}
+  .p-price .old{font-size:.56rem}
+  .p-buy{font-size:.54rem;padding:7px 3px;gap:3px;white-space:nowrap}
+  .p-flag{font-size:.44rem;padding:3px 6px;top:6px;left:6px}
+  .store-divider{margin:30px 0 18px}
+  .store-divider span{font-size:.58rem;letter-spacing:.16em}
+  .s-hero{padding:60px 6vw 28px}
 }
 </style>
 </head>
@@ -129,91 +129,96 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 </header>
 
 <main class="store">
+
+  <div class="store-divider"><span>🔥 Career Power-Ups</span></div>
   <div class="prod-grid">
 
-    <!-- 1 -->
+    <!-- Naukri Hack (bestseller) -->
     <div class="prod">
       <div class="p-img">
-        <span class="p-flag">Bestseller</span>
-        <div class="p-bg" style="background-image:url('product1.png')"></div>
-        <img src="product1.png" alt="CompTIA Security+ Guide Book" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
-        <div class="p-ph"><span class="ph-ic">📘</span><span class="ph-t">CompTIA Security+<br/>Guide Book</span><span class="ph-s">demo — add product1.jpg (4:5)</span></div>
-      </div>
-      <div class="p-body">
-        <div class="p-cat">Certification</div>
-        <h3>CompTIA Security+ Guide Book</h3>
-        <div class="p-desc">A focused, exam-ready guide to crack Security+ (SY0-701) faster.</div>
-        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span><span class="save">95% OFF</span></div>
-        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20CompTIA%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy on WhatsApp →</a>
-      </div>
-    </div>
-
-    <!-- 2 -->
-    <div class="prod">
-      <div class="p-img">
-        <div class="p-bg" style="background-image:url('product2.png')"></div>
-        <img src="product2.png" alt="AI Job Prompt Guide" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
-        <div class="p-ph"><span class="ph-ic">🤖</span><span class="ph-t">AI Job Prompt<br/>Guide</span><span class="ph-s">demo — add product2.jpg (4:5)</span></div>
-      </div>
-      <div class="p-body">
-        <div class="p-cat">AI &amp; Productivity</div>
-        <h3>AI Job Prompt Guide</h3>
-        <div class="p-desc">Ready-to-use ChatGPT prompts for resumes, cover letters &amp; interviews.</div>
-        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span><span class="save">95% OFF</span></div>
-        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20the%20AI%20Job%20Prompt%20Guide%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy on WhatsApp →</a>
-      </div>
-    </div>
-
-    <!-- 3 -->
-    <div class="prod">
-      <div class="p-img">
-        <div class="p-bg" style="background-image:url('product3.png')"></div>
         <img src="product3.png" alt="Naukri Hack" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
-        <div class="p-ph"><span class="ph-ic">💼</span><span class="ph-t">Naukri<br/>Hack</span><span class="ph-s">demo — add product3.jpg (4:5)</span></div>
+        <div class="p-ph"><span class="ph-ic">💼</span><span class="ph-t">Naukri Hack</span></div>
       </div>
       <div class="p-body">
-        <div class="p-cat">Job Search</div>
         <h3>Naukri Hack</h3>
-        <div class="p-desc">Get noticed by recruiters — optimise your Naukri profile the smart way.</div>
-        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span><span class="save">95% OFF</span></div>
-        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20Naukri%20Hack%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy on WhatsApp →</a>
+        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span><span class="p-best">⭐ Bestseller</span></div>
+        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20Naukri%20Hack%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy →</a>
       </div>
     </div>
 
-    <!-- 4 -->
+    <!-- 100+ Secret AI Prompts (bestseller · NEW) -->
     <div class="prod">
       <div class="p-img">
-        <div class="p-bg" style="background-image:url('product4.png')"></div>
+        <img src="product6.png" alt="100+ Secret AI Prompts" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
+        <div class="p-ph"><span class="ph-ic">🤖</span><span class="ph-t">100+ Secret AI Prompts</span></div>
+      </div>
+      <div class="p-body">
+        <h3>100+ Secret AI Prompts</h3>
+        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span><span class="p-best">⭐ Bestseller</span></div>
+        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20100%2B%20Secret%20AI%20Prompts%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy →</a>
+      </div>
+    </div>
+
+    <!-- AI Job Prompt Guide -->
+    <div class="prod">
+      <div class="p-img">
+        <img src="product2.png" alt="AI Job Prompt Guide" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
+        <div class="p-ph"><span class="ph-ic">🧠</span><span class="ph-t">AI Job Prompt Guide</span></div>
+      </div>
+      <div class="p-body">
+        <h3>AI Job Prompt Guide</h3>
+        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span></div>
+        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20the%20AI%20Job%20Prompt%20Guide%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy →</a>
+      </div>
+    </div>
+
+    <!-- LinkedIn Hack -->
+    <div class="prod">
+      <div class="p-img">
         <img src="product4.png" alt="LinkedIn Hack" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
-        <div class="p-ph"><span class="ph-ic">🔗</span><span class="ph-t">LinkedIn<br/>Hack</span><span class="ph-s">demo — add product4.jpg (4:5)</span></div>
+        <div class="p-ph"><span class="ph-ic">🔗</span><span class="ph-t">LinkedIn Hack</span></div>
       </div>
       <div class="p-body">
-        <div class="p-cat">Personal Brand</div>
         <h3>LinkedIn Hack</h3>
-        <div class="p-desc">Grow your reach &amp; land inbound offers — the LinkedIn playbook.</div>
-        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span><span class="save">95% OFF</span></div>
-        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20LinkedIn%20Hack%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy on WhatsApp →</a>
+        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span></div>
+        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20LinkedIn%20Hack%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy →</a>
       </div>
     </div>
 
-    <!-- 5 -->
+    <!-- ATS Resume Templates -->
     <div class="prod">
       <div class="p-img">
-        <div class="p-bg" style="background-image:url('product5.jpeg')"></div>
         <img src="product5.png" alt="2 ATS-Friendly Resume Templates" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
-        <div class="p-ph"><span class="ph-ic">📄</span><span class="ph-t">2 ATS-Friendly<br/>Resume Templates</span><span class="ph-s">demo — add product5.jpg (4:5)</span></div>
+        <div class="p-ph"><span class="ph-ic">📄</span><span class="ph-t">2 ATS Resume Templates</span></div>
       </div>
       <div class="p-body">
-        <div class="p-cat">Resume</div>
-        <h3>2 ATS-Friendly Resume Templates</h3>
-        <div class="p-desc">Clean, recruiter-approved templates that sail through ATS filters.</div>
-        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span><span class="save">95% OFF</span></div>
-        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20the%20ATS%20Resume%20Templates%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy on WhatsApp →</a>
+        <h3>2 ATS Resume Templates</h3>
+        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span></div>
+        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20the%20ATS%20Resume%20Templates%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy →</a>
       </div>
     </div>
 
   </div>
-  <p class="refund-note">⚠ All these services are digital &amp; <b>non-refundable</b> once purchased.</p>
+
+  <div class="store-divider"><span>📘 Certification Materials</span></div>
+  <div class="prod-grid">
+
+    <!-- CompTIA Security+ Guide Book -->
+    <div class="prod">
+      <div class="p-img">
+        <img src="product1.png" alt="CompTIA Security+ Guide Book" onload="this.parentElement.classList.add('ok')" onerror="this.remove()" />
+        <div class="p-ph"><span class="ph-ic">📘</span><span class="ph-t">CompTIA Security+ Guide Book</span></div>
+      </div>
+      <div class="p-body">
+        <h3>CompTIA Security+ Guide Book</h3>
+        <div class="p-price"><span class="old">₹199</span><span class="new">₹9</span></div>
+        <a class="p-buy" href="https://wa.me/919032687452?text=I%20want%20CompTIA%20at%20%E2%82%B99" target="_blank" rel="noopener">🟢 Buy →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="refund-note">⚠ All services are digital &amp; <b>non-refundable</b> once purchased.</p>
 </main>
 
 <footer class="s-foot">
