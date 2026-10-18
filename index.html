@@ -128,6 +128,12 @@ h1.hero-name{font-family:var(--head);font-weight:800;font-size:clamp(2.6rem,6.6v
 .btn-grad:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(245,179,1,.4)}
 .btn-line{border:1px solid #3c382d;color:var(--cream);background:transparent}
 .btn-line:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-3px)}
+/* résumé CTA */
+.btn-cv{position:relative;overflow:hidden;background:var(--cream);color:#1a1405;border:1.5px solid var(--amber);animation:pulse 2.2s infinite}
+.btn-cv::before{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.85),transparent);transform:skewX(-20deg);animation:scan 3.2s ease-in-out infinite}
+.btn-cv:hover{transform:translateY(-3px) scale(1.03);background:#fff;box-shadow:0 18px 44px rgba(245,179,1,.35)}
+.btn-cv .cv-ic{display:inline-block;animation:bob 1.8s ease-in-out infinite}
+.btn-cv .cv-new{background:var(--coral);color:#fff;border-radius:100px;padding:2px 8px;font-size:.62em;font-weight:800;letter-spacing:.08em}
 .hero-stats{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .stat{background:rgba(18,17,14,.66);border:1px solid var(--line);border-radius:13px;padding:10px 16px;text-align:center;backdrop-filter:blur(6px);transition:.3s}
 .stat:hover{border-color:rgba(245,179,1,.35);transform:translateY(-2px)}
@@ -440,13 +446,13 @@ footer .fm{color:#6a655a;font-size:.7rem;letter-spacing:.14em;text-transform:upp
       <div class="hello reveal d1">Hi 👋 I'm</div>
       <h1 class="hero-name reveal d1"><span class="cx">Arava</span> <span class="gx">Anantha</span> <span class="cx">Rao</span></h1>
       <div class="hero-tagline reveal d2">securing enterprises · <span class="gx">empowering humans</span></div>
-      <div class="hero-role reveal d2">InfoSec Professional (GRC)</div>
+      <div class="hero-role reveal d2">Information Security Manager · GRC</div>
       <div class="aspire reveal d2">
         <div class="asp red"><div class="a-ic">🛡️</div><div><span class="a-k">The Mission</span><span class="a-t">Aspiring <b>CISO</b> — leading enterprise security from the front</span></div></div>
       </div>
       <div class="hero-btns reveal d3">
         <a class="btn btn-grad" href="https://www.linkedin.com/in/aanantharao/" target="_blank" rel="noopener">💼 LinkedIn <span class="lk-badge">9K+ followers</span></a>
-        <button class="btn btn-line" onclick="openLB(['resume-1.jpg'])">📄 Résumé</button>
+        <button class="btn btn-cv" onclick="openLB(['resume-1.jpg','resume-2.jpg'])"><span class="cv-ic">📄</span> View My Résumé <span class="cv-new">NEW</span></button>
       </div>
       <div class="hero-stats reveal d3">
         <div class="stat"><div class="num gx"><i data-count="3">0</i>+</div><div class="lbl">Years @ TCS</div></div>
@@ -552,18 +558,18 @@ footer .fm{color:#6a655a;font-size:.7rem;letter-spacing:.14em;text-transform:upp
           <div class="lvl-top"><div class="lvl-title">Information Security Manager · GRC</div><div class="lvl-date">Sep 2023 — Oct 2026</div></div>
           <div class="lvl-org">Tata Consultancy Services (TCS), <b>Hyderabad</b> · Corporate Security</div>
           <div class="quests">
-            <div class="qi"><span class="chk">✓</span><span>Own the end-to-end <b>GRC program</b> for a global business group — <b>75+ client accounts</b></span></div>
-            <div class="qi"><span class="chk">✓</span><span>Core member of <b>Corporate Security</b>, driving enterprise-wide initiatives</span></div>
-            <div class="qi"><span class="chk">✓</span><span>Full <b>risk management lifecycle</b> &amp; group <b>risk register</b> governance</span></div>
-            <div class="qi"><span class="chk">✓</span><span>Design &amp; govern <b>Security Controls Identification (SCI)</b> from client MSAs</span></div>
-            <div class="qi"><span class="chk">✓</span><span>Issued security PoV on <b>500+ RFCs</b>, new business requests &amp; POCs</span></div>
-            <div class="qi"><span class="chk">✓</span><span>Monthly <b>security scorecards</b> &amp; CISO / leadership review decks</span></div>
-            <div class="qi"><span class="chk">✓</span><span>Audit readiness &amp; <b>SOC 2</b> — gap assessments, <b>zero repeat findings</b></span></div>
-            <div class="qi"><span class="chk">✓</span><span>Built an internal <b>cross-audit program</b> across the ISM team</span></div>
-            <div class="qi"><span class="chk">✓</span><span>Account lifecycle, <b>ODC physical security</b> &amp; HOTO readiness for new buildings</span></div>
-            <div class="qi"><span class="chk">✓</span><span><b>Access governance</b> — periodic reviews, RBAC, least privilege, SoD</span></div>
-            <div class="qi"><span class="chk">✓</span><span><b>TPRM</b>, RFP/RFI &amp; <b>GenAI risk</b> assessment with Privacy &amp; Legal</span></div>
-            <div class="qi"><span class="chk">✓</span><span>Incident analysis &amp; RCA · trained <b>8 team members</b> · <b>L2 escalation</b></span></div>
+            <div class="qi"><span class="chk">✓</span><span>Owned the information security <b>GRC program</b> for a global business group — <b>75+ client accounts</b></span></div>
+            <div class="qi"><span class="chk">✓</span><span>Maintained the <b>risk register</b> — risk assessments, treatment plans &amp; mitigation to closure</span></div>
+            <div class="qi"><span class="chk">✓</span><span>Translated client MSA obligations into <b>Security Controls Identification (SCI)</b></span></div>
+            <div class="qi"><span class="chk">✓</span><span>Reviewed <b>500+ RFCs</b>, change requests &amp; POCs against ISO 27001 &amp; NIST CSF</span></div>
+            <div class="qi"><span class="chk">✓</span><span>Monthly <b>security scorecards</b> &amp; KPI/KRI decks for security committee meetings</span></div>
+            <div class="qi"><span class="chk">✓</span><span>Led audit readiness &amp; <b>SOC 2</b> evidence mapping — <b>zero repeat findings</b></span></div>
+            <div class="qi"><span class="chk">✓</span><span><b>Access governance</b> — compliance profiles, RBAC, least privilege, SoD</span></div>
+            <div class="qi"><span class="chk">✓</span><span><b>TPRM</b>, vendor risk, RFP/RFI &amp; <b>GenAI risk</b> assessments with Legal &amp; Privacy</span></div>
+            <div class="qi"><span class="chk">✓</span><span>Incident analysis &amp; RCA, firewall rule &amp; <b>VA exception</b> reviews</span></div>
+            <div class="qi"><span class="chk">✓</span><span>Reassessed physical security across <b>6 Hyderabad campuses</b></span></div>
+            <div class="qi"><span class="chk">✓</span><span>Designed a <b>cross-audit program</b>, SOPs &amp; baseline controls for HR, Admin &amp; IT</span></div>
+            <div class="qi"><span class="chk">✓</span><span>Cut compliance reporting effort <b>30%</b> with Copilot agents · <b>L2 support</b> &amp; backup to team lead</span></div>
           </div>
         </div>
       </div>
@@ -581,8 +587,10 @@ footer .fm{color:#6a655a;font-size:.7rem;letter-spacing:.14em;text-transform:upp
     <div class="ach-strip reveal">
       <div class="as-title">🏆 Achievements Unlocked</div>
       <div class="ach-grid">
-        <div class="achv" onclick="openLB(['award1.jpeg','award2.jpeg'])"><span class="tro">🎖️</span><span class="unlock">Achievement Unlocked</span><div class="at">Special Initiative Award</div><div class="as">2024 &amp; 2025 · outstanding performance &amp; contribution to the team, awarded by CISO</div><span class="view">🔍 View Certificates</span></div>
+        <div class="achv" onclick="openLB(['award1.jpeg','award2.jpeg'])"><span class="tro">🎖️</span><span class="unlock">Achievement Unlocked</span><div class="at">Star Performer &amp; Special Initiative</div><div class="as">2024 &amp; 2025 · back-to-back awards from the TCS CISO</div><span class="view">🔍 View Certificates</span></div>
         <div class="achv" onclick="openLB(['tcsai-spark.jpeg'])"><span class="tro">⚡</span><span class="unlock">Achievement Unlocked</span><div class="at">tcsAI ACCESS.AI SPARK</div><div class="as">2026 · innovation at the TCS ACCESS.AI Hackathon</div><span class="view">🔍 View Certificate</span></div>
+        <div class="achv"><span class="tro">🛡️</span><span class="unlock">Achievement Unlocked</span><div class="at">Zero Repeat Audit Findings</div><div class="as">sustained across internal &amp; external audit cycles for a 75+ account portfolio</div></div>
+        <div class="achv"><span class="tro">🤖</span><span class="unlock">Achievement Unlocked</span><div class="at">30% Less Manual Reporting</div><div class="as">automated compliance reporting &amp; leadership decks with Microsoft Copilot agents</div></div>
       </div>
     </div>
   </div>
@@ -597,15 +605,15 @@ footer .fm{color:#6a655a;font-size:.7rem;letter-spacing:.14em;text-transform:upp
       <p class="sec-sub">Nine domains of governance, risk &amp; compliance I own end-to-end — straight from my day-to-day.</p>
     </div>
     <div class="exp-grid reveal d1">
-      <div class="exp-card"><div class="exp-head"><div class="d-ic">🏛️</div><div class="d-meta"><span class="e-n">DOMAIN 01</span><h3>Governance &amp; Compliance</h3></div></div><div class="tags"><span class="tag">ISO 27001:2022</span><span class="tag">NIST CSF</span><span class="tag">NIST RMF</span><span class="tag">SOC 2</span><span class="tag">CISO / Leadership Decks</span><span class="tag">SOP Design</span><span class="tag">Security Awareness</span></div></div>
-      <div class="exp-card"><div class="exp-head"><div class="d-ic">🎯</div><div class="d-meta"><span class="e-n">DOMAIN 02</span><h3>Risk Management</h3></div></div><div class="tags"><span class="tag">Risk Register</span><span class="tag">Risk Assessment</span><span class="tag">TPRM</span><span class="tag">KRI &amp; Metrics</span><span class="tag">GenAI Risk</span></div></div>
+      <div class="exp-card"><div class="exp-head"><div class="d-ic">🏛️</div><div class="d-meta"><span class="e-n">DOMAIN 01</span><h3>Governance &amp; Compliance</h3></div></div><div class="tags"><span class="tag">ISO 27001:2022</span><span class="tag">NIST CSF</span><span class="tag">NIST RMF</span><span class="tag">SOC 2</span><span class="tag">CIS Benchmarks</span><span class="tag">CISO / Leadership Decks</span><span class="tag">SOP Design</span><span class="tag">Security Awareness</span></div></div>
+      <div class="exp-card"><div class="exp-head"><div class="d-ic">🎯</div><div class="d-meta"><span class="e-n">DOMAIN 02</span><h3>Risk Management</h3></div></div><div class="tags"><span class="tag">Risk Register</span><span class="tag">Risk Assessment</span><span class="tag">Risk Treatment</span><span class="tag">TPRM</span><span class="tag">Vendor Risk</span><span class="tag">KRI &amp; Metrics</span><span class="tag">GenAI Risk</span></div></div>
       <div class="exp-card"><div class="exp-head"><div class="d-ic">🔎</div><div class="d-meta"><span class="e-n">DOMAIN 03</span><h3>Audit &amp; Assurance</h3></div></div><div class="tags"><span class="tag">Audit Readiness</span><span class="tag">Control Walkthroughs</span><span class="tag">Evidence Validation</span><span class="tag">Gap Assessment</span><span class="tag">NC Closure</span><span class="tag">Cross-Audit</span></div></div>
       <div class="exp-card"><div class="exp-head"><div class="d-ic">⚖️</div><div class="d-meta"><span class="e-n">DOMAIN 04</span><h3>Regulatory &amp; Privacy</h3></div></div><div class="tags"><span class="tag">GDPR</span><span class="tag">HIPAA</span><span class="tag">PCI DSS</span><span class="tag">DPDP Act</span><span class="tag">Data Protection</span></div></div>
       <div class="exp-card"><div class="exp-head"><div class="d-ic">📋</div><div class="d-meta"><span class="e-n">DOMAIN 05</span><h3>Client &amp; Contractual Governance</h3></div></div><div class="tags"><span class="tag">MSA → SCI</span><span class="tag">Security Scorecards</span><span class="tag">RFC Governance</span><span class="tag">RFP / RFI</span><span class="tag">Compliance Profiles</span></div></div>
-      <div class="exp-card"><div class="exp-head"><div class="d-ic">🔐</div><div class="d-meta"><span class="e-n">DOMAIN 06</span><h3>ITGC &amp; Access Management</h3></div></div><div class="tags"><span class="tag">Access Reviews</span><span class="tag">RBAC</span><span class="tag">Least Privilege</span><span class="tag">Segregation of Duties</span><span class="tag">Change Mgmt</span></div></div>
-      <div class="exp-card"><div class="exp-head"><div class="d-ic">🚨</div><div class="d-meta"><span class="e-n">DOMAIN 07</span><h3>Security Operations</h3></div></div><div class="tags"><span class="tag">Incident Mgmt</span><span class="tag">RCA</span><span class="tag">VA/PT Governance</span><span class="tag">Hardening (CIS)</span></div></div>
-      <div class="exp-card"><div class="exp-head"><div class="d-ic">🌐</div><div class="d-meta"><span class="e-n">DOMAIN 08</span><h3>Information Security (Network, Cloud)</h3></div></div><div class="tags"><span class="tag">Network Security</span><span class="tag">Firewall Reconciliation</span><span class="tag">Azure Security</span><span class="tag">AZ-500</span><span class="tag">Shared Responsibility</span><span class="tag">Cloud Control Assessment</span></div></div>
-      <div class="exp-card"><div class="exp-head"><div class="d-ic">🏢</div><div class="d-meta"><span class="e-n">DOMAIN 09</span><h3>Physical Security</h3></div></div><div class="tags"><span class="tag">Site Security Controls</span><span class="tag">Building HOTO Readiness</span><span class="tag">Asset Security</span></div></div>
+      <div class="exp-card"><div class="exp-head"><div class="d-ic">🔐</div><div class="d-meta"><span class="e-n">DOMAIN 06</span><h3>ITGC &amp; Access Management</h3></div></div><div class="tags"><span class="tag">Access Reviews</span><span class="tag">RBAC</span><span class="tag">Least Privilege</span><span class="tag">Segregation of Duties</span></div></div>
+      <div class="exp-card"><div class="exp-head"><div class="d-ic">🚨</div><div class="d-meta"><span class="e-n">DOMAIN 07</span><h3>Security Operations</h3></div></div><div class="tags"><span class="tag">Incident Mgmt</span><span class="tag">RCA</span><span class="tag">VA Exception Reviews</span><span class="tag">Change Mgmt</span><span class="tag">Hardening (CIS)</span></div></div>
+      <div class="exp-card"><div class="exp-head"><div class="d-ic">🌐</div><div class="d-meta"><span class="e-n">DOMAIN 08</span><h3>Information Security (Network, Cloud)</h3></div></div><div class="tags"><span class="tag">Network Security</span><span class="tag">Firewall Rule Reviews</span><span class="tag">Azure Security</span><span class="tag">AZ-500</span><span class="tag">Shared Responsibility</span><span class="tag">Cloud Control Assessment</span></div></div>
+      <div class="exp-card"><div class="exp-head"><div class="d-ic">🏢</div><div class="d-meta"><span class="e-n">DOMAIN 09</span><h3>Physical Security</h3></div></div><div class="tags"><span class="tag">Site Security Controls</span><span class="tag">6-Campus Reassessment</span><span class="tag">Physical Spot Checks</span><span class="tag">Building HOTO Readiness</span><span class="tag">Asset Security</span></div></div>
     </div>
   </div>
 </section>
@@ -626,6 +634,7 @@ footer .fm{color:#6a655a;font-size:.7rem;letter-spacing:.14em;text-transform:upp
       <div class="cred" onclick="openLB(['microsoft-aibp.jpeg'])"><span class="cy">2026</span><div><h4>Microsoft Certified: AI Business Professional</h4><p>Microsoft · Jul 2026</p></div></div>
       <div class="cred" onclick="openLB(['SC900.png'])"><span class="cy">2024</span><div><h4>Security, Compliance &amp; Identity</h4><p>Microsoft · SC-900</p></div></div>
       <div class="cred" onclick="openLB(['AI900.png'])"><span class="cy">2024</span><div><h4>Azure AI Fundamentals</h4><p>Microsoft · AI-900</p></div></div>
+      <div class="cred"><span class="cy">—</span><div><h4>Azure Fundamentals</h4><p>Microsoft · AZ-900</p></div></div>
       <div class="cred" onclick="openLB(['DPDPA.jpeg'])"><span class="cy">2026</span><div><h4>DPDP Act 2023 — Certified · 93%</h4><p>Digital Personal Data Protection</p></div></div>
     </div>
   </div>
@@ -642,6 +651,7 @@ footer .fm{color:#6a655a;font-size:.7rem;letter-spacing:.14em;text-transform:upp
       <a class="ct-item" href="tel:+919966337813"><span class="t">Phone / WhatsApp</span><span class="v">+91 99663 37813</span></a>
       <a class="ct-item" href="https://www.linkedin.com/in/aanantharao/" target="_blank" rel="noopener"><span class="t">LinkedIn</span><span class="v">/in/aanantharao</span></a>
       <a class="ct-item" href="https://www.instagram.com/aravaanantharao" target="_blank" rel="noopener"><span class="t">Instagram</span><span class="v">@aravaanantharao</span></a>
+      <a class="ct-item" href="https://x.com/a_anantharao" target="_blank" rel="noopener"><span class="t">X / Twitter</span><span class="v">@a_anantharao</span></a>
     </div>
   </div>
 </section>
